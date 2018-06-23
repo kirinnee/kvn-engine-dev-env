@@ -1,0 +1,37 @@
+
+declare sophie as character
+declare stage as stage
+
+scene demo demo
+
+frame
+    stage bringCharacter sophie
+    stage display t=1000
+        sophie appear 500
+
+frame
+    sophie speak Hi, this is an example on how to use the KVN engine
+frame
+    sophie changeSprite smile
+        sophie speak It's designed for non-programmers to code!
+frame
+    sophie changeSprite shy
+        sophie speak Right now its still in a very experimental stage...
+frame
+    sophie speak BUT!
+        sophie wait 500
+            sophie changeSprite overjoyed
+                sophie speak I can go through some simple stuff with you!
+frame
+    sophie speak For starters, lets see where you put your images and scripts
+frame
+    sophie speak Backgrounds goes into images/bkgd/ folder
+frame
+    sophie cont and characters goes into image/char folder!
+frame
+    sophie say Scripts, on the other hand, goes into scripts/ folder!
+frame
+    sophie changeSprite proud
+        sophie speak Ain't I good at explaining?
+frame
+    sophie speak Well, that's it for today!

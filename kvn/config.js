@@ -7,7 +7,7 @@ var vnScreenRatio = "16:9";
 var hideOverflow = true;
 
 //The links to all your script in
-var scripts = [];
+var scripts = ["demo.js"];
 
 var displaySpriteName = false;
 
