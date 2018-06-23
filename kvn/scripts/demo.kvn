@@ -1,18 +1,27 @@
 
-declare sophie as character
+declare sophie,kvnfolder,imagefolder as character
 declare stage as stage
 
 scene demo demo
 
 frame
     stage bringCharacter sophie
+    stage bringCharacter kvnfolder
+    stage bringCharacter imagefolder
     stage display t=1000
-        sophie appear 500
+
+        sophie changeSprite smile
+            sophie appear 500
 
 frame
-    sophie speak Hi, this is an example on how to use the KVN engine
+    sophie changeSprite def
+        sophie speak Hi!
+            sophie wait 300
+                sophie cont I'm Sophie!
+                    sophie wait 300
+                        sophie cont And this is an example for the KVN engine~!!
 frame
-    sophie changeSprite smile
+    sophie changeSprite overjoyed
         sophie speak It's designed for non-programmers to code!
 frame
     sophie changeSprite shy
@@ -23,15 +32,96 @@ frame
             sophie changeSprite overjoyed
                 sophie speak I can go through some simple stuff with you!
 frame
-    sophie speak For starters, lets see where you put your images and scripts
+    sophie speak For starters, lets get familiar with the workspace
 frame
-    sophie speak Backgrounds goes into images/bkgd/ folder
+    sophie speak Please open up the kvn folder in the workspace!
+        sophie wait 500
+            sophie changeSprite shocked
+                sophie say Ohh!
+                    sophie wait 800
+                        sophie changeSprite smile
+                            sophie say Workspace refers to the folder you have downloaded!
 frame
-    sophie cont and characters goes into image/char folder!
+    sophie changeSprite def
+        sophie say Anyways,
+            sophie wait 200
+                sophie cont there are a few folders you need to be familiar with!
 frame
-    sophie say Scripts, on the other hand, goes into scripts/ folder!
+    sophie say Hmmm..
+
+    sophie changeSprite unhappy
+        sophie trigger t=1000 delay=195
+            sophie changeSprite smile
+                sophie speak There!
+                sophie move x=-20 t=500
+                    kvnfolder appear 500
+                        sophie cont This is how the kvn folder in your workspace should look like!
+frame
+    sophie say Alright!
+        sophie wait 200
+            sophie changeSprite overjoyed
+                sophie cont Let's get started~!!
+frame
+    sophie changeSprite def
+        sophie speak This is the images folder!
+            sophie wait 300
+                sophie cont This is where we place all our images
+    kvnfolder changeSprite image
+frame
+    sophie changeSprite overjoyed
+        sophie say I will explain a little more later!
+frame
+    sophie changeSprite def
+        kvnfolder changeSprite script
+        sophie speak Next,
+            sophie wait 300
+                sophie cont This is the scripts folder, where we put all our scripts!
+frame
+    sophie speak and...
+frame
+    kvnfolder changeSprite sound
+        sophie speak This is where we place all our music or sound files!
+frame
+    sophie speak It's quite simple!
 frame
     sophie changeSprite proud
         sophie speak Ain't I good at explaining?
 frame
-    sophie speak Well, that's it for today!
+    sophie speak Moving on, lets open the image folder!
+    kvnfolder changeSprite image
+frame
+    kvnfolder disappear 200
+        imagefolder appear 200
+            sophie speak This is how the image folder look like!
+frame
+    sophie changeSprite shy
+        sophie speak It's pretty self-explanatory, but I will explain anyways!
+frame
+    sophie changeSprite def
+        imagefolder changeSprite char
+            sophie speak This is the character folder
+frame
+    sophie speak You should place all your character images inside!
+frame
+    sophie speak You can create subfolders and directories! For example, my default sprite is def.png!
+frame
+    sophie speak Moving on...
+        imagefolder changeSprite bkgd
+frame
+    sophie speak This is the background folder.
+        sophie wait 300
+            sophie cont It works pretty much like character folder, except its for the stage's background!
+frame
+    sophie speak Hmm...
+        sophie glitch
+        sophie changeSprite overjoyed
+            sophie cont I think that's it for today!
+                sophie wait 300
+                    sophie cont My time is almost up...
+
+frame
+    sophie say Well, see you around!
+        sophie disappear 2000
+        imagefolder disappear 2000
+frame
+    stage unDisplay t=2000

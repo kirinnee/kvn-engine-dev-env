@@ -9,9 +9,23 @@ create character sophie w=30 h=30*(4960/1756) name=Sophie x=0 y=60 horizontalAli
     sophie addSprite name=proud path=proud.png
     sophie addSprite name=shy path=shy.png
     sophie addSprite name=smile path=smile.png
+    sophie addSprite name=shocked path=shocked.png
+    sophie addSprite name=unhappy path=unhappy.png
     sophie setDefSkip true
     sophie setDefGraph swing
     sophie complete
 
+create character kvnfolder w=40 h=40*(184/464) name=n yOffSet=0 x=15 defImage=folder.JPG aX=50 aY=50
+    kvnfolder addSprite name=script path=scripts.JPG
+    kvnfolder addSprite name=sound path=sound.JPG
+    kvnfolder addSprite name=config path=config.JPG
+    kvnfolder addSprite name=image path=images.JPG
+    kvnfolder complete
+
+create character imagefolder w=40 h=40*127/470 name=n yOffSet=0 x=15 defImage=imagefold.JPG aX=50 aY=50
+    imagefolder addSprite name=char path=char.JPG
+    imagefolder addSprite name=bkgd path=bkgd.JPG
+    imagefolder complete
 
 create stage stage background=background.jpg
+    stage complete
