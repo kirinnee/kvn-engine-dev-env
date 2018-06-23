@@ -1,6 +1,4 @@
 
-var test = false
-
 //Please enter how large you want the screen width relative to the full screen width (85 = 85%)
 var vnScreenWidth = 100;
 //the ratio of the vn Width to the vn Height. If you want your VN to have a 16:9 ratio, then put 16:9
