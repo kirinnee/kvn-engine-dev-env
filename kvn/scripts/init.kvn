@@ -1,0 +1,17 @@
+
+
+start
+    play demo 0
+
+
+create character sophie w=30 h=30*(4960/1756) name=Sophie x=0 y=60 horizontalAlignment=50 vAlign=50 defImage=def.png
+    sophie addSprite name=overjoyed path=overjoy.png
+    sophie addSprite name=proud path=proud.png
+    sophie addSprite name=shy path=shy.png
+    sophie addSprite name=smile path=smile.png
+    sophie setDefSkip true
+    sophie setDefGraph swing
+    sophie complete
+
+
+create stage stage background=background.jpg
