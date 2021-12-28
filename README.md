@@ -1,9 +1,11 @@
-Kirinnee Visual Novel Engine Dev Pack
+# KVN Dev Env
+Setup KVN workspace for developing visual novels
 
-Installation guide:
-1) By now, you should have NPM and git, if not, please download NPM at https://nodejs.org/en/ and GIT at https://git-scm.com/downloads
-2) Install the interpreter by rulling install-interpreter.bat
+# Pre-requisite
+1. NPM
+2. Git
 
+# Getting Started
 You can update the engine by running the update.bat. Remember to change your configuration back afterwards
 
 To start the VN run VN.html
