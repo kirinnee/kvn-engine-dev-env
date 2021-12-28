@@ -195,4 +195,7 @@ let demo =  new Scene("demo",
 ,new Frame(function(){
 	stage.unDisplay(2000);
 }, function(){return null})
+,new Frame(function(){
+	playScene('script_basic',0);
+}, function(){return null})
 ]);

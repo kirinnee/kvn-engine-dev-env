@@ -1,22 +1,35 @@
 # KVN Dev Env
+
 Setup KVN workspace for developing visual novels
 
 # Pre-requisite
-1. NPM
-2. Git
+
+1. [NodeJS](https://nodejs.org/en/)
+2. NPM (Should come with NodeJS)
+3. [Atom](https://atom.io/)
+
+# Setting up Workspace
+
+1. Clone this repository
+2. Within Atom Editor, go to `files` > `settings` > `Editor` > `Tab Length` and change it to 4
+3. Within Atom Editor, go to `files` > `settings` > `Install`
+4. Search for `kvn-lang` package and install it
+5. Open this repository within Atom Editor
 
 # Getting Started
-You can update the engine by running the update.bat. Remember to change your configuration back afterwards
 
-To start the VN run VN.html
+1. Run `npm run dev`
+2. Under `kvn` folder, you can edit files in `images/` and `scripts/` (`.kvn` files only)
+3. Open `vn.html` in the root folder
+4. There will be a basic tutorial in the form of a Visual Novel
 
-Creation of character, stages and sound is done in kvn/scripts/init.js
+# Configurations
 
-Scenes can be written in .kvn or .js, recommended for non-programmers is .kvn with atom edittor
+You can configure your VN Engine in `kvn/config.js` for development configurations and `kvn/config.prod.js` for
+production configurations.
 
-We have a package with syntax highlight and autocomplete in atom. Search kvn-lang and install (by Kirinnee)
+# Compile to production
 
-For documentation, visit kvn.bigbulb.studio
-
-To use .kvn, you need to run the compiler in kvn-interpreter/compiler.bat, this will automatically compile .kvn files into .js
-To update the interpreter, run update.bat in kvn-interpreter folder
+1. Check compilation options in `kvn-compiler/config.js`
+2. Run `npm run build` in the root folder
+3. Find the compiled artifact as `kvn-compiler/export` folder

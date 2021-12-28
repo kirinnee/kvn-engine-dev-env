@@ -1,0 +1,23 @@
+declare sophie as character
+declare stage as stage
+
+scene script_basic script_basic
+
+
+frame
+    stage bringCharacter sophie
+    stage display t=500
+        sophie changeSprite def
+            sophie appear 500
+
+frame
+    sophie changeSprite shocked
+    sophie speak Ohh!!
+
+frame
+    sophie changeSprite smile
+        sophie speak Hello again!
+            sophie cont Welcome back to our tutorial!
+
+frame
+    sophie speak This time I will go through how to...

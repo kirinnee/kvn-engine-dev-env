@@ -125,3 +125,6 @@ frame
         imagefolder disappear 2000
 frame
     stage unDisplay t=2000
+
+frame
+    play script_basic
