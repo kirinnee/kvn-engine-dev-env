@@ -18,10 +18,11 @@ Setup KVN workspace for developing visual novels
 
 # Getting Started
 
-1. Run `npm run dev`
-2. Under `kvn` folder, you can edit files in `images/` and `scripts/` (`.kvn` files only)
-3. Open `vn.html` in the root folder
-4. There will be a basic tutorial in the form of a Visual Novel
+1. Run `./setup.sh`
+2. Run `npm run dev`
+3. Under `kvn` folder, you can edit files in `images/` and `scripts/` (`.kvn` files only)
+4. Open `vn.html` in the root folder
+5. There will be a basic tutorial in the form of a Visual Novel
 
 # Configurations
 

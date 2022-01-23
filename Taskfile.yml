@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  setup:
+    desc: Setup the dev environment for compiler and
+    cmds:
+      - ./setup.sh
